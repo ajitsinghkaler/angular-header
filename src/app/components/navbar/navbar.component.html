@@ -1,0 +1,9 @@
+<a href="#"  [ngClass]="{'active': navbar.Items && showChildMenu}" (click)="clicked()">
+  {{ navbar.Label}}
+  <i *ngIf="navbar.Items && !showChildMenu" class="fa fa-angle-down" aria-hidden="true"></i>
+  <i *ngIf="navbar.Items && showChildMenu" class="fa fa-angle-up" aria-hidden="true"></i>
+</a>
+
+<div *ngIf="showChildMenu && navbar.Items" class="dropdown-content">
+  <app-navbar *ngFor="let nav of navbar.Items" [navbar]="nav"></app-navbar>
+</div>
