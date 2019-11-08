@@ -1,6 +1,5 @@
 <h3 align="center">Angular Header</h3>
 
----
 
 ## Table of Contents
 
