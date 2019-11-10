@@ -1,4 +1,4 @@
-<h3 align="center">Angular Header</h3>
+#Angular Header
 
 
 ## Table of Contents
