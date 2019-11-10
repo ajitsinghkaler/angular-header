@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "karza-assign": {
+    "angular-header": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/karza-assign",
+            "outputPath": "dist/angular-header",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "karza-assign:build"
+            "browserTarget": "angular-header:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "karza-assign:build:production"
+              "browserTarget": "angular-header:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "karza-assign:build"
+            "browserTarget": "angular-header:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "karza-assign:serve"
+            "devServerTarget": "angular-header:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "karza-assign:serve:production"
+              "devServerTarget": "angular-header:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "karza-assign"
+  "defaultProject": "angular-header"
 }
