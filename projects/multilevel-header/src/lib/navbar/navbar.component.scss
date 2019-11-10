@@ -1,0 +1,79 @@
+@import "./../variables.scss";
+a {
+  display: block;
+  color: $ternary-color;
+  text-align: left;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+a:hover {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+div a {
+  float: left;
+}
+
+div ng-navbar .active {
+  color: mediumblue;
+}
+.active {
+  color: gold;
+}
+.dropdown-content {
+  position: absolute;
+  border: 1px solid grey;
+  border-radius: 3px;
+  min-width: 160px;
+  background-color: $ternary-color;
+  z-index: 1;
+  a {
+    float: none;
+    color: $primary-color;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+
+  a:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}
+
+.fa {
+  float: right;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  div app-navbar .active {
+    color: $secondary-color;
+  }
+  div app-navbar .active:hover {
+    color: $primary-color;
+  }
+  .active {
+    color: $secondary-color;
+  }
+
+  .fa {
+    float: none;
+  }
+
+  .dropdown-content {
+    position: initial;
+    padding-left: 15px;
+    border: none;
+    background-color: $primary-color;
+    a {
+      float: none;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+      color: $ternary-color;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="{{ navbarClass }}" id="navbar">
+  <ng-navbar *ngFor="let nav of navbarElements" [navbar]="nav"></ng-navbar>
+  <i
+    (click)="changeIcon()"
+    class="fa {{ iconClass }} icon"
+    aria-hidden="true"
+  ></i>
+</div>

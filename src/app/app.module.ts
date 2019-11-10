@@ -6,10 +6,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
-
+import {MultilevelHeaderModule} from "multilevel-header";
 @NgModule({
   declarations: [AppComponent, HeaderComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,MultilevelHeaderModule],
   providers: [],
   bootstrap: [AppComponent]
 })
